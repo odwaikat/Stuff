@@ -1,0 +1,44 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+
+    &-toggle {
+        background: transparent;
+        border: 0;
+        padding: 0;
+
+        &-icon {
+            margin-left: 10px;
+            padding-top: 1px;
+        }
+    }
+
+    &-menu {
+        background-color: white;
+        position: absolute;
+        left: 0;
+        padding: 5px 20px;
+        margin-top: 15px;
+        width: auto;
+        min-width: 200px;
+        max-width: 300px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+        .status {
+            width: 87px;
+        }
+    }
+    &-item {
+        display: block;
+        margin-bottom: 15px;
+
+        &:first-child {
+            margin-top: 15px;
+        }
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}

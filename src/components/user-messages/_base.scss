@@ -1,0 +1,58 @@
+.user-messages-panel {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+
+    .user-image {
+        margin-right: 20px;
+        margin-bottom: 26px;
+        height: 30px !important;
+
+        svg {
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
+
+    .user-messages {
+        flex: 1;
+        margin-right: 50px;
+
+        .message {
+            padding: 20px;
+            border-radius: 15px 15px 15px 0px;
+            background-color: #f7f7f7;
+            margin-top: 15px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .user-messages-sent {
+            color: #9e9e9e;
+            font-size: 12px;
+            padding: 5px 20px;
+        }
+    }
+
+    &.stuff {
+        .user-image {
+            order: 2;
+            margin-right: 0;
+            margin-left: 20px;
+        }
+
+        .user-messages {
+            order: 1;
+            margin-right: 0;
+            margin-left: 50px;
+
+            .message {
+                border-radius: 15px 15px 0px 15px;
+                background-color: #3ebfcf;
+                color: white;
+            }
+        }
+    }
+}

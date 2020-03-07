@@ -1,0 +1,47 @@
+.App {
+	// text-align: left;
+}
+
+html {
+	// background-color: lightgray;
+
+	* {
+		box-sizing: border-box;
+	}
+}
+
+.btn {
+	display: inline-block;
+	color: #212529;
+	box-shadow: none;
+	text-align: center;
+	vertical-align: middle;
+	background-color: transparent;
+	border: 0;
+	padding: 10px 20px;
+	font-size: 15px;
+	line-height: 15px;
+	border-radius: 5px;
+
+	&.selected {
+		background-color: #3ebfcf;
+		color: white;
+	}
+
+	&.white {
+		background-color: white;
+	}
+
+	&-primary {
+		background-color: black;
+		border: 1px solid black;
+		color: white;
+	}
+	&-secondary {
+		background-color: transparent;
+		border: 1px solid black;
+		color: black;
+	}
+}
+
+@import './styles';

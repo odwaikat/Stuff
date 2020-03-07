@@ -1,0 +1,32 @@
+
+.progress-bar {
+    display: flex;
+    height: 30px;
+
+    .circle-icon {
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        position: relative;
+        margin-right: 20px;
+
+        &.active {
+            border-color: black;
+        }
+
+        &:before {
+            content: '';
+            width: 20px;
+            border-bottom: 2px solid #ddd;
+            position: absolute;
+            left: 8px;
+            top: 50%;
+        }
+        &:last-child {
+            &:before {
+                border: 0;
+            }
+        }
+    }
+}
